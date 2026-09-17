@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="A fictional restaurant website concept and customizable design demo." />
+  <title>PLATE / 01 — Restaurant Website Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="midnight" data-layout="split" data-motion="on">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="PLATE 01 home">
+      <span class="brand-mark">P/01</span>
+      <span class="brand-name">PLATE / 01</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#menu">Menu</a>
+      <a href="#story">Story</a>
+      <a href="#visit">Visit</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="pill-button ghost" id="openStyleLab" type="button">Style Lab <span>⌘K</span></button>
+      <a class="pill-button filled" href="#reserve">Reserve a table</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span> Fictional restaurant concept · Demo 01</div>
+        <h1>Food with<br /><em>character.</em></h1>
+        <p class="hero-lede">An intentionally fictional restaurant experience designed to show clients how one content set can transform across different visual directions.</p>
+        <div class="hero-actions">
+          <a class="primary-cta" href="#menu">Explore the menu <span>↓</span></a>
+          <button class="text-cta" id="heroStyleButton" type="button">Try another design <span>↗</span></button>
+        </div>
+        <div class="hero-meta">
+          <span>01 — Seasonal kitchen</span>
+          <span>02 — Small plates</span>
+          <span>03 — Open evenings</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1400&q=85" alt="Colorful plated food on a dining table" />
+          <div class="hero-image-overlay"></div>
+          <div class="hero-card-top">
+            <span>Chef's selection</span>
+            <span>Tonight</span>
+          </div>
+          <div class="hero-card-bottom">
+            <span class="dish-caption">Charred seasonal vegetables<br />citrus · herbs · toasted grain</span>
+            <span class="price">₱420</span>
+          </div>
+        </div>
+        <div class="orbit-note orbit-note-a">Good food<br />needs room.</div>
+        <div class="orbit-note orbit-note-b">Scroll to taste →</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Restaurant highlights">
+      <div class="ticker-track">
+        <span>SEASONAL</span><i>✦</i><span>LOCAL INGREDIENTS</span><i>✦</i><span>SMALL PLATES</span><i>✦</i><span>GOOD COMPANY</span><i>✦</i>
+        <span>SEASONAL</span><i>✦</i><span>LOCAL INGREDIENTS</span><i>✦</i><span>SMALL PLATES</span><i>✦</i><span>GOOD COMPANY</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="intro section-shell" id="story">
+      <div class="section-label">01 / The idea</div>
+      <div class="intro-grid">
+        <h2 class="display-title reveal">A flexible identity<br /><em>for real clients.</em></h2>
+        <div class="intro-copy reveal">
+          <p>This demo intentionally uses a made-up restaurant concept. There is no claim that PLATE / 01 is a real restaurant, location, menu, or operating business.</p>
+          <p>The useful part is the design system: content, menu cards, booking flow, colors, typography, spacing, borders and motion can all change without rebuilding the whole page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section section-shell" id="menu">
+      <div class="section-heading reveal">
+        <div>
+          <div class="section-label">02 / Menu preview</div>
+          <h2>Built for appetite.</h2>
+        </div>
+        <div class="menu-controls" role="group" aria-label="Filter menu">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="small" type="button">Small plates</button>
+          <button class="filter" data-filter="mains" type="button">Mains</button>
+          <button class="filter" data-filter="sweet" type="button">Sweet</button>
+        </div>
+      </div>
+
+      <div class="menu-grid">
+        <article class="dish-card reveal" data-category="small">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85" alt="Fresh dish with greens and vegetables" /><span class="dish-tag">Small plate</span></div>
+          <div class="dish-info"><div><h3>Garden Crunch</h3><p>Greens · citrus · seeds · soft cheese</p></div><strong>₱280</strong></div>
+        </article>
+        <article class="dish-card reveal" data-category="small">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Bowl of colorful fresh food" /><span class="dish-tag">Small plate</span></div>
+          <div class="dish-info"><div><h3>Bright Bowl</h3><p>Roasted grain · tomato · herbs · tahini</p></div><strong>₱310</strong></div>
+        </article>
+        <article class="dish-card reveal" data-category="mains">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?auto=format&fit=crop&w=900&q=85" alt="Savory pasta dish" /><span class="dish-tag">Main</span></div>
+          <div class="dish-info"><div><h3>Midnight Pasta</h3><p>Slow tomato · roasted garlic · aged cheese</p></div><strong>₱460</strong></div>
+        </article>
+        <article class="dish-card reveal" data-category="mains">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85" alt="Grilled main dish on a plate" /><span class="dish-tag">Main</span></div>
+          <div class="dish-info"><div><h3>Ember Plate</h3><p>Grilled protein · charred greens · jus</p></div><strong>₱590</strong></div>
+        </article>
+        <article class="dish-card reveal" data-category="sweet">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85" alt="Small dessert pastries" /><span class="dish-tag">Sweet</span></div>
+          <div class="dish-info"><div><h3>Late Night Bites</h3><p>Warm pastry · cream · berry</p></div><strong>₱240</strong></div>
+        </article>
+        <article class="dish-card reveal" data-category="sweet">
+          <div class="dish-image"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=85" alt="Glazed dessert on a plate" /><span class="dish-tag">Sweet</span></div>
+          <div class="dish-info"><div><h3>Velvet Spoon</h3><p>Silky cream · cacao · sea salt</p></div><strong>₱260</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase section-shell">
+      <div class="showcase-panel reveal">
+        <div class="showcase-art">
+          <span class="rotating-word">TASTE · SPACE · MOTION ·</span>
+          <div class="showcase-circle"><span>PLATE<br />/ 01</span></div>
+        </div>
+        <div class="showcase-copy">
+          <div class="section-label">03 / Design system</div>
+          <h2>One restaurant.<br /><em>Five personalities.</em></h2>
+          <p>Use the Style Lab to present different design directions to a client during discovery. Changes happen instantly and persist while they browse.</p>
+          <button class="secondary-cta" id="showcaseStyleButton" type="button">Open Style Lab <span>↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve-section section-shell" id="reserve">
+      <div class="reserve-copy reveal">
+        <div class="section-label">04 / Reservation concept</div>
+        <h2>Make the next<br /><em>visit easy.</em></h2>
+        <p>This demo form is visual only. It does not submit to a live restaurant or claim to book a real table.</p>
+      </div>
+      <form class="reservation-card reveal" id="reservationForm">
+        <div class="field-row">
+          <label>Date<input type="date" id="dateField" required /></label>
+          <label>Time<select required><option value="">Select</option><option>5:30 PM</option><option>6:30 PM</option><option>7:30 PM</option><option>8:30 PM</option></select></label>
+        </div>
+        <div class="field-row">
+          <label>Guests<select required><option value="">Select</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label>
+          <label>Name<input type="text" placeholder="Your name" required /></label>
+        </div>
+        <button class="primary-cta wide" type="submit">Preview reservation <span>→</span></button>
+        <div class="form-note">Demo interaction · no booking is created</div>
+      </form>
+    </section>
+
+    <section class="visit section-shell" id="visit">
+      <div class="visit-card reveal">
+        <div>
+          <div class="section-label">05 / Contact concept</div>
+          <h2>Ready for a<br /><em>different mood?</em></h2>
+        </div>
+        <div class="visit-details">
+          <p><strong>Fictional location</strong><br />Demo address · Anywhere</p>
+          <p><strong>Hours concept</strong><br />Tue–Sun · 5:30 PM — 10:00 PM</p>
+          <p><strong>Design inquiry</strong><br />hello@example-demo.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <span>PLATE / 01 · Restaurant website concept</span>
+    <span>Demo only · No real brand represented</span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <aside class="style-lab" id="styleLab" aria-hidden="true">
+    <div class="style-backdrop" id="styleBackdrop"></div>
+    <div class="style-panel" role="dialog" aria-modal="true" aria-labelledby="styleTitle">
+      <div class="style-panel-header">
+        <div>
+          <div class="section-label">Client preview</div>
+          <h2 id="styleTitle">Style Lab</h2>
+          <p>Switch the same content between visual directions.</p>
+        </div>
+        <button class="close-button" id="closeStyleLab" type="button" aria-label="Close Style Lab">×</button>
+      </div>
+
+      <div class="style-section">
+        <div class="control-heading"><span>Visual direction</span><small>5 presets</small></div>
+        <div class="theme-grid">
+          <button class="theme-option active" data-theme-choice="midnight" type="button"><span class="swatch midnight-swatch"></span><b>Midnight</b><small>Dark · cinematic</small></button>
+          <button class="theme-option" data-theme-choice="terracotta" type="button"><span class="swatch terracotta-swatch"></span><b>Terracotta</b><small>Warm · editorial</small></button>
+          <button class="theme-option" data-theme-choice="garden" type="button"><span class="swatch garden-swatch"></span><b>Garden</b><small>Fresh · organic</small></button>
+          <button class="theme-option" data-theme-choice="paper" type="button"><span class="swatch paper-swatch"></span><b>Paper</b><small>Minimal · refined</small></button>
+          <button class="theme-option" data-theme-choice="electric" type="button"><span class="swatch electric-swatch"></span><b>Electric</b><small>Bold · modern</small></button>
+        </div>
+      </div>
+
+      <div class="style-section">
+        <div class="control-heading"><span>Hero layout</span><small id="layoutLabel">Split</small></div>
+        <div class="segmented-control">
+          <button class="segment active" data-layout="split" type="button">Split</button>
+          <button class="segment" data-layout="center" type="button">Centered</button>
+          <button class="segment" data-layout="editorial" type="button">Editorial</button>
+        </div>
+      </div>
+
+      <div class="style-section">
+        <div class="control-heading"><span>Corner radius</span><small id="radiusLabel">18px</small></div>
+        <input class="range-input" id="radiusRange" type="range" min="8" max="32" value="18" />
+      </div>
+
+      <div class="style-section switch-row">
+        <div><strong>Motion</strong><small>Ambient effects and reveal animation</small></div>
+        <button class="toggle active" id="motionToggle" type="button" aria-pressed="true"><span></span></button>
+      </div>
+
+      <div class="style-panel-footer"><span>Live preview</span><button id="resetStyles" type="button">Reset defaults</button></div>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
