@@ -1,0 +1,27 @@
+/* Critical visibility fix: keep the Style Lab closed until opened by JavaScript. */
+.style-lab {
+  display: none !important;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.style-lab.open {
+  display: block !important;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+body.lab-open {
+  overflow: hidden;
+}
+
+@media (max-width: 720px) {
+  .style-panel {
+    width: min(100% - 24px, 520px);
+    max-height: calc(100dvh - 24px);
+    overflow-y: auto;
+  }
+}
