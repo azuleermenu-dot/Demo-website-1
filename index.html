@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17130f" />
+  <title>EMBER & SALT — Restaurant Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark">✦</span><span>EMBER <i>&</i> SALT</span></a>
+    <nav><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#visit">Visit</a></nav>
+    <button class="header-cta" data-scroll="#reserve">Book a table <span>↗</span></button>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> A fictional restaurant concept</p>
+        <h1>Fire, flavor,<br><em>and a little</em><br>magic.</h1>
+        <p class="hero-text">A warm, modern dining room where seasonal ingredients meet open-fire cooking and unhurried evenings.</p>
+        <div class="hero-actions"><button class="primary" data-scroll="#menu">Explore the menu <span>↗</span></button><button class="text-button" data-scroll="#story">Discover our story <span>↓</span></button></div>
+        <div class="hero-meta"><span>Open Tue–Sun</span><span>18:00 — 23:00</span><span>Made with intention</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="image-frame"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Artfully plated seasonal dish"><div class="image-note">01 / seasonal plate</div></div>
+        <div class="floating-card"><span>Tonight's mood</span><strong>Slow down.<br>Taste more.</strong><div class="mini-line"></div><small>Chef's table · 7 courses</small></div>
+      </div>
+    </section>
+
+    <section class="marquee"><div>SEASONAL · HONEST · FIRE-LED · LOCAL · SEASONAL · HONEST · FIRE-LED · LOCAL · </div></section>
+
+    <section id="menu" class="menu-section section-pad">
+      <div class="section-heading"><div><p class="eyebrow"><span></span> From the kitchen</p><h2>A menu with<br><em>something to say.</em></h2></div><p class="section-intro">Our menu changes with the market. Expect bold textures, bright acidity, and ingredients treated with respect.</p></div>
+      <div class="menu-grid">
+        <article class="dish-card"><div class="dish-image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Roasted vegetables"><span>01</span></div><div class="dish-info"><div><h3>Ember-roasted roots</h3><p>Smoked yogurt · herbs · toasted seed</p></div><b>₱420</b></div></article>
+        <article class="dish-card featured"><div class="dish-image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Fire grilled steak"><span>02</span></div><div class="dish-info"><div><h3>Charred pasture cut</h3><p>Black garlic · ember jus · crisp shallot</p></div><b>₱980</b></div></article>
+        <article class="dish-card"><div class="dish-image"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" alt="Dessert"><span>03</span></div><div class="dish-info"><div><h3>Salted cacao cloud</h3><p>Dark chocolate · sea salt · cold cream</p></div><b>₱360</b></div></article>
+      </div>
+      <div class="center"><button class="outline" id="menuButton">View sample menu <span>↗</span></button></div>
+    </section>
+
+    <section id="story" class="story section-pad"><div class="story-image reveal"><img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85" alt="Warm restaurant interior"><div class="stamp">EST.<br><strong>2026</strong></div></div><div class="story-copy reveal"><p class="eyebrow"><span></span> The idea</p><h2>Good food.<br><em>Good energy.</em></h2><p>EMBER & SALT is a fictional restaurant concept built around the belief that memorable meals do not need to be complicated. Just thoughtful ingredients, a little fire, and people who care.</p><p>Every detail—from the open kitchen to the last pour—is designed to make guests feel present.</p><button class="text-button" data-scroll="#visit">Find your way here <span>↗</span></button></div></section>
+
+    <section id="reserve" class="reserve section-pad"><div><p class="eyebrow"><span></span> Your table awaits</p><h2>Make tonight<br><em>worth remembering.</em></h2></div><form id="reserveForm"><div class="form-row"><label>Name<input required type="text" placeholder="Your name"></label><label>Guests<select><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label></div><div class="form-row"><label>Date<input required type="date"></label><label>Time<select><option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option></select></label></div><button class="primary" type="submit">Request a reservation <span>↗</span></button><p class="form-note">Demo interaction only — no real booking is made.</p></form></section>
+    <section id="visit" class="visit section-pad"><div><p class="eyebrow"><span></span> Come as you are</p><h2>Find us in<br><em>the city glow.</em></h2></div><div class="visit-details"><p>42 Fictional Lane<br>San Isidro, Manila</p><p>hello@emberandsalt.demo<br>+63 900 000 0000</p><button class="text-button" id="directions">Get directions <span>↗</span></button></div></section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">✦</span><span>EMBER <i>&</i> SALT</span></a><span>© 2026 Fictional demo concept</span><span>Designed for demonstration</span></footer>
+  <aside class="style-lab" id="styleLab"><button class="lab-tab" id="labToggle">✦ <span>Style Lab</span></button><div class="lab-panel"><div class="lab-head"><div><p class="eyebrow">CUSTOMIZE THE EXPERIENCE</p><h3>Style Lab</h3></div><button id="labClose">×</button></div><p class="lab-description">Let customers explore different visual directions before choosing their restaurant website design.</p><div class="control"><label>Color direction</label><div class="swatches"><button class="swatch active" data-theme="ember">Ember</button><button class="swatch" data-theme="olive">Olive</button><button class="swatch" data-theme="cobalt">Cobalt</button><button class="swatch" data-theme="rose">Rose</button></div></div><div class="control"><label>Typography</label><div class="segmented"><button class="active" data-font="serif">Editorial</button><button data-font="sans">Modern</button></div></div><div class="control"><label>Corner radius</label><input id="radiusRange" type="range" min="0" max="28" value="14"></div><div class="control"><label>Motion</label><div class="segmented"><button class="active" data-motion="smooth">Smooth</button><button data-motion="still">Still</button></div></div><button class="reset" id="resetLab">Reset design ↺</button></div></aside>
+  <div class="toast" id="toast"></div><script src="app.js"></script>
+</body>
+</html>
