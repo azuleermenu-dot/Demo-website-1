@@ -21,6 +21,11 @@ const defaultSettings = {
   motion: 'on'
 };
 
+// Keep the Style Lab hidden on first paint. It must only appear after a user opens it.
+styleLab.classList.remove('open');
+styleLab.setAttribute('aria-hidden', 'true');
+styleLab.style.display = 'none';
+
 let settings = loadSettings();
 
 function loadSettings() {
@@ -73,6 +78,7 @@ function showToast(message) {
 }
 
 function openLab() {
+  styleLab.style.display = 'block';
   styleLab.classList.add('open');
   styleLab.setAttribute('aria-hidden', 'false');
   closeStyleLab.focus();
@@ -82,6 +88,7 @@ function openLab() {
 function closeLab() {
   styleLab.classList.remove('open');
   styleLab.setAttribute('aria-hidden', 'true');
+  styleLab.style.display = 'none';
   openStyleLab.focus();
   document.body.classList.remove('lab-open');
 }
